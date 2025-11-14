@@ -22,7 +22,7 @@ export const crearProducto = async (req, res) => {
     res.status(201).json(nuevo);
 };
 
-export const actulizarProduct = async(req, res) => {
+export const actulizarProducto = async(req, res) => {
     const {id} = req.params
     const actulizado = await updateProduct(id, req.body);
     res.json(actulizado);

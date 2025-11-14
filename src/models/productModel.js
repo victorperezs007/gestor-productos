@@ -16,8 +16,8 @@ export const createProduct = async ({nombre,precio,descripcion,stock}) => {
 };
 
 export const updateProduct = async (id, {nombre,precio,descripcion,stock}) => {
-    const result = await pool.query("UPDATE productos SET nombre=$1,precio$2,descripcion=$3,stock=#4 WHERE id==$5 RETURNING*", [nombre,precio.descripcion,stock,id]);
-    return SpeechRecognitionResultList.rows[0];
+    const result = await pool.query("UPDATE productos SET nombre=$1,precio$2,descripcion=$3,stock=#4 WHERE id==$5 RETURNING*", [nombre,precio,descripcion,stock,id]);
+    return result.rows[0];
 };
 
 export const deleteProduct = async (id) => {

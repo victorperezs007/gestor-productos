@@ -3,7 +3,7 @@ import {
     obtenerProductos,
     obtenerProducto,
     crearProducto,
-    actualizarProducto,
+    actulizarProducto,
     eliminarProducto
 } from "../controllers/productController.js";
 
@@ -12,7 +12,7 @@ const router = Router();
 router.get("/",obtenerProductos);
 router.get("/:id",obtenerProducto);
 router.post("/",crearProducto);
-router.put("/:id",actualizarProducto);
+router.put("/:id",actulizarProducto);
 router.delete("/:id",eliminarProducto);
 
 export default router;
