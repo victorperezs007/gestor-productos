@@ -2,7 +2,7 @@
   "name": "gestor-productos",
   "version": "1.0.0",
   "description": "Backend Proyecto Productos WAZ",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "accepts": "^2.0.0",
     "body-parser": "^2.2.0",
