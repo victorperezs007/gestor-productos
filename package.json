@@ -1,19 +1,25 @@
 {
   "name": "gestor-productos",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend Proyecto Productos WAZ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorperezs007/gestor-productos.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "pg": "^8.16.3",
-    "pg-hstore": "^2.3.4"
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/victorperezs007/gestor-productos/issues"
+  },
+  "homepage": "https://github.com/victorperezs007/gestor-productos#readme",
+  "script": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
   }
 }
